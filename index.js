@@ -4,7 +4,7 @@ function submitForm() {
     var phone = document.getElementById('phone').value;
     var bitsId = document.getElementById('bitsId').value;
     var hostel = document.getElementById('hostel').value;
-    // var size = document.querySelector('input[name="size"]:checked');
+    var size = document.querySelector('input[name="size"]:checked');
     var agreeTerms = document.getElementById('agreeTerms').checked;
 
     resetErrors();
