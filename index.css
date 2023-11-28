@@ -20,13 +20,41 @@ label {
   display: block;
   margin-bottom: 8px;
 }
-input, select {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type="radio"]{
+  margin-right: 5px;
+  vertical-align: middle;
+}
+label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+input[type="checkbox"] {
+  margin-right: 5px;
+  margin-top: 10px;
 }
 .error {
   color: red;
@@ -41,6 +69,7 @@ button, input[type="reset"] {
   border-radius: 4px;
   cursor: pointer;
   margin: 10px;
+  width: auto;
 }
 button:hover, input[type="reset"]:hover {
   background-color: #45a049;

@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
-<p class="formTitle">FILL THE FORM TO BUY EXCLUSIVE MERCH !!!</p>
+<p class="formTitle">FILL THE FORM TO BUY EXCLUSIVE MERCH</p>
 <form id="registrationForm">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" minlength="5" maxlength="50" placeholder="Enter name" required>
     <div class="error" id="nameError"></div>
-
+    
     <label for="email">Email ID:</label>
     <input type="email" id="email" name="email" placeholder="Enter valid email id" required>
     <div class="error" id="emailError"></div>
@@ -45,8 +45,9 @@
         <option value="Vyas Bhawan">Vyas Bhawan</option>
     </select>
     <div class="error" id="hostelError"></div>
-
+   
     <label>Size:</label>
+    <div class="bottom">
     <input type="radio" id="sizeSmall" name="size" value="Small" required>
     <label for="sizeSmall">Small</label>
     <input type="radio" id="sizeMedium" name="size" value="Medium" required>
@@ -58,11 +59,12 @@
     <input type="radio" id="sizeDoubleExtraLarge" name="size" value="DoubleExtraLarge" required>
     <label for="sizeDoubleExtraLarge">Double Extra Large</label>
     <div class="error" id="sizeError"></div>
-
+</div>
     <label>
         <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
         I agree to the terms and conditions
     </label>
+
     <div class="error" id="termsError"></div>
 
     <button type="button" onclick="submitForm()">Submit</button>
