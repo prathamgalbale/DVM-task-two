@@ -1,82 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration form for merch signing</title>
     <link rel="stylesheet" href="index.css" type="text/css">
 </head>
+
 <body>
-<p class="formTitle">FILL THE FORM TO BUY EXCLUSIVE MERCH</p>
-<form id="registrationForm">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" minlength="5" maxlength="50" placeholder="Enter name" required>
-    <div class="error" id="nameError"></div>
-    
-    <label for="email">Email ID:</label>
-    <input type="email" id="email" name="email" placeholder="Enter valid email id" required>
-    <div class="error" id="emailError"></div>
+    <p class="formTitle">FILL THE FORM TO BUY EXCLUSIVE MERCH</p>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" minlength="5" maxlength="50" placeholder="Enter name" required>
+        <div class="error" id="nameError"></div>
 
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter phone number" required>
-    <div class="error" id="phoneError"></div>
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" placeholder="Enter valid email id" required>
+        <div class="error" id="emailError"></div>
 
-    <label for="bitsId">BITS ID:</label>
-    <input type="text" id="bitsId" name="bitsId" placeholder="Enter BITS ID" required>
-    <div class="error" id="bitsIdError"></div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter phone number" required>
+        <div class="error" id="phoneError"></div>
 
-    <label for="hostel">Hostel:</label>
-    <select id="hostel" name="hostel" required>
-        <option value="" disabled selected>Select your hostel</option>
-        <option value="Ashok Bhawan">Ashok Bhawan</option>
-        <option value="Bhagirath Bhawan">Bhagirath Bhawan</option>
-        <option value="Budh Bhawan">Budh Bhawan</option>
-        <option value="CVR Bhawan">CVR Bhawan</option>
-        <option value="Gandhi Bhawan">Gandhi Bhawan</option>
-        <option value="Krishna Bhawan">Krishna Bhawan</option>
-        <option value="Malviya Bhawan">Malviya Bhawan</option>
-        <option value="Meera Bhawan">Meera Bhawan</option>
-        <option value="MSA Bhawan">MSA Bhawan</option>
-        <option value="Ram Bhawan">Ram Bhawan</option>
-        <option value="RanaPratap Bhawan" >RanaPratap Bhawan</option>
-        <option value="Shankar Bhawan">Shankar Bhawan</option>
-        <option value="Srinivas Ramanujan Bhawan">Srinivas Ramanujan Bhawan</option>
-        <option value="Vishwakarma Bhawan">Vishwakarma Bhawan</option>
-        <option value="Vyas Bhawan">Vyas Bhawan</option>
-    </select>
-    <div class="error" id="hostelError"></div>
-   
-    <label>Size:</label>
-    <div class="bottom">
-    <input type="radio" id="sizeSmall" name="size" value="Small" required>
-    <label for="sizeSmall">Small</label>
-    <input type="radio" id="sizeMedium" name="size" value="Medium" required>
-    <label for="sizeMedium">Medium</label>
-    <input type="radio" id="sizeLarge" name="size" value="Large" required>
-    <label for="sizeLarge">Large</label>
-    <input type="radio" id="sizeExtraLarge" name="size" value="ExtraLarge" required>
-    <label for="sizeExtraLarge">Extra Large</label>
-    <input type="radio" id="sizeDoubleExtraLarge" name="size" value="DoubleExtraLarge" required>
-    <label for="sizeDoubleExtraLarge">Double Extra Large</label>
-    <div class="error" id="sizeError"></div>
-</div>
-    <label>
-        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
-        I agree to the terms and conditions
-    </label>
+        <label for="bitsId">BITS ID:</label>
+        <input type="text" id="bitsId" name="bitsId" placeholder="Enter BITS ID" required>
+        <div class="error" id="bitsIdError"></div>
 
-    <div class="error" id="termsError"></div>
+        <label for="hostel">Hostel:</label>
+        <select id="hostel" name="hostel" required>
+            <option value="" disabled selected>Select your hostel</option>
+            <option value="Ashok Bhawan">Ashok Bhawan</option>
+            <option value="Bhagirath Bhawan">Bhagirath Bhawan</option>
+            <option value="Budh Bhawan">Budh Bhawan</option>
+            <option value="CVR Bhawan">CVR Bhawan</option>
+            <option value="Gandhi Bhawan">Gandhi Bhawan</option>
+            <option value="Krishna Bhawan">Krishna Bhawan</option>
+            <option value="Malviya Bhawan">Malviya Bhawan</option>
+            <option value="Meera Bhawan">Meera Bhawan</option>
+            <option value="MSA Bhawan">MSA Bhawan</option>
+            <option value="Ram Bhawan">Ram Bhawan</option>
+            <option value="RanaPratap Bhawan">RanaPratap Bhawan</option>
+            <option value="Shankar Bhawan">Shankar Bhawan</option>
+            <option value="Srinivas Ramanujan Bhawan">Srinivas Ramanujan Bhawan</option>
+            <option value="Vishwakarma Bhawan">Vishwakarma Bhawan</option>
+            <option value="Vyas Bhawan">Vyas Bhawan</option>
+        </select>
+        <div class="error" id="hostelError"></div>
 
-    <button type="button" onclick="submitForm()">Submit</button>
-    <input type="reset" value="Reset">
-
-    <div class="modal" id="successModal">
-        <div class="modal-content">
-            <p>Form submitted successfully!</p>
-            <span class="close" onclick="closeSuccessModal()">Close</span>
+        <label>Size:</label>
+        <div>
+            <input type="radio" id="sizeSmall" name="size" value="Small" required>
+            <label for="sizeSmall">Small</label>
         </div>
-    </div>
-</form>
-<script src="index.js"></script>
+        <div>
+            <input type="radio" id="sizeMedium" name="size" value="Medium" required>
+            <label for="sizeMedium">Medium</label>
+        </div>
+        <div>
+            <input type="radio" id="sizeLarge" name="size" value="Large" required>
+            <label for="sizeLarge">Large</label>
+        </div>
+        <div>
+            <input type="radio" id="sizeExtraLarge" name="size" value="ExtraLarge" required>
+            <label for="sizeExtraLarge">Extra Large</label>
+        </div>
+        <div>
+            <input type="radio" id="sizeDoubleExtraLarge" name="size" value="DoubleExtraLarge" required>
+            <label for="sizeDoubleExtraLarge">Double Extra Large</label>
+        </div>
+        <div class="error" id="sizeError"></div>
+
+        <label>
+            <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+            I agree to the terms and conditions
+        </label>
+
+        <div class="error" id="termsError"></div>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+        <input type="reset" value="Reset">
+
+        <div class="modal" id="successModal">
+            <div class="modal-content">
+                <p>Form submitted successfully!</p>
+                <span class="close" onclick="closeSuccessModal()">Close</span>
+            </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
 </body>
+
 </html>

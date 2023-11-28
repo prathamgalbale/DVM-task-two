@@ -47,11 +47,6 @@ label {
   vertical-align: middle;
   margin: 10px 0;
 }
-.bottom{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 input[type="checkbox"] {
   margin-right: 5px;
   margin-top: 10px;
